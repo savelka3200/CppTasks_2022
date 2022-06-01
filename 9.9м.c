@@ -53,8 +53,8 @@ void delete_columns(double** a, int n, int m, int k1, int k2) {
     }
     else{
         for (int i = 0; i < n; i++) {
-            for (int j = k; j <= (k+2); j++) {
-                a[i][j] = a[i][j + k];
+            for (int j = k1; j <= m; j++) {
+                a[i][j-1] = a[i][j];
             }
         }
     }
